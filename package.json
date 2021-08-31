@@ -1,5 +1,5 @@
 {
-  "name": "portal-image-size",
+  "name": "browser-image-dimensions",
   "version": "0.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
