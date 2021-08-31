@@ -1,5 +1,31 @@
 # Browser Image Dimensions
+[![Publish](https://github.com/Durgaprasad-Budhwani/browser-image-dimensions/actions/workflows/publish.yml/badge.svg)](https://github.com/Durgaprasad-Budhwani/browser-image-dimensions/actions/workflows/publish.yml)
+[![npm version](https://badge.fury.io/js/browser-image-dimensions.svg)](https://badge.fury.io/js/browser-image-dimensions)
+
 Get image size in the browser
+
+## Installation
+
+For npm, use below command 
+
+```shell
+npm install browser-image-dimensions --save
+```
+
+For Yarn, use below command
+```shell
+yarn add browser-image-dimensions
+```
+
+## How to use
+
+```typescript
+import getBrowserImageDimensions from 'browser-image-dimensions';
+
+// ......
+
+const imageDetails = await getBrowserImageDimensions("test.png");
+```
 
 ## License
 
