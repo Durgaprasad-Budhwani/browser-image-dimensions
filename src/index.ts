@@ -1,4 +1,4 @@
-const getBrowserImageDimensions = (image: File | Blob | string) => {
+const getBrowserImageDimensions = async (image: File | Blob | string) => {
   return new Promise((resolve, reject) => {
     const url = typeof image === "string" ? image : URL.createObjectURL(image);
     if (!url) { throw new Error("Must use a valid image"); }
