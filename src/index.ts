@@ -2,7 +2,9 @@ const getBrowserImageDimensions = async (image: File | Blob | string) =>
     new Promise((resolve, reject) => {
       const url = typeof image === "string" ? image : URL.createObjectURL(image);
       if (!url) {
-        throw new Error("Must use a valid image");
+        reject(new Error("incorrect image"));
+
+        return;
       }
       const img = new Image();
       img.onload = () => {
